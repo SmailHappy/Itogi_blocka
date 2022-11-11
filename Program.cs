@@ -7,3 +7,13 @@ for (int i = 0; i < num; i++) {
     System.Console.Write($"Введите {i + 1} элемент массива A: ");
     array[i] = Console.ReadLine();
 }
+
+int count_elements = 0;
+string elements = String.Empty;
+
+for (int i = 0; i < array.Length; i++) {
+    if (array[i].Length <= 3) {
+        elements = elements + Convert.ToString(i);
+        count_elements += 1;
+    }
+}
