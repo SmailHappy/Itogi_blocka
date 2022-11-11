@@ -17,3 +17,12 @@ for (int i = 0; i < array.Length; i++) {
         count_elements += 1;
     }
 }
+
+string[] result = new string[count_elements];
+
+for (int i = 0; i < count_elements; i++) {
+    int j = Convert.ToInt32(Convert.ToString(elements[i]));
+    result[i] = array[j];
+}
+
+System.Console.WriteLine("[" + string.Join(", ", result) + "]");
